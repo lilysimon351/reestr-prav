@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* input */
 input,
 .search__input {
@@ -19,11 +26,13 @@ button,
 }
 .burger {
     display: block;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 .pc{
     border-radius: 7px;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     padding: 7px 9px;
 }
 .pc span {
@@ -106,6 +115,7 @@ line-height: 24px;
     padding: 25px 15px;
     border-radius: 25px;
     max-height: 90%;
+    font-size: 11px;
 }
 .popup__left,
 .popup__right {
@@ -122,6 +132,9 @@ line-height: 24px;
 }
 .popup__footer button {
 margin-bottom: 20px;
+}
+.need-list {
+    margin-top: 20px;
 }
 
 /* breadcrumbs */
