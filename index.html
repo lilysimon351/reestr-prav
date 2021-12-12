@@ -11,14 +11,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/media.css">
 </head>
 <body>
     
     <header class="header">
         <div class="container">
             <nav class="nav">
+                <div class="btn btn_white burger">
+                    <span></span>
+                </div>
                 <a href="/" class="logo">
-                    <img src="icons/REESTR-PRAV.png" alt="Реестр прав">
+                    <img src="icons/reetr-prav.png" alt="Реестр прав">
                 </a>
                 <div class="nav__left">
                     <p class="ts">
@@ -39,51 +43,58 @@
     </header>
     <main>
         <div class="content-wr blue-bg">
-            <div class="search">
-                <h1 class="search__title main-title">Выписка ЕГРН онлайн</h1>
-                <p class="search__decr title-decr">заказать из базы Росреестра</p>
-                <form action="#" class="search__form mx-auto">
-                    <div class="input-wr">
-                        <input type="search" class="search__input" placeholder="Кадастровый номер или адрес">
-                        <button type="submit" class="search__submit">Найти</button>
-                    </div>
-                    <p class="search__example">
-                        Например: 90:25:010121:8745 или Сочи, ул Абрикосовая, д 24, кв 21
-                    </p>
-                    <div class="search__info info">
-                        Для получения открытых данных введите адрес объекта или его кадастровый номер. Для получения через интернет срочной выписки из ЕГРН или ЕГРП с ЭЦП на квартиру, земельный участок - оплатите в соответствующем тарифе и Вам на E-mail поступит официальная выписка.
-
-                    </div>
-                </form>
+            <div class="container">
+                <div class="search">
+                    <h1 class="search__title main-title">Выписка ЕГРН онлайн</h1>
+                    <p class="search__decr title-decr">заказать из базы Росреестра</p>
+                    <form action="#" class="search__form mx-auto">
+                        <div class="input-wr">
+                            <input type="search" class="search__input" placeholder="Кадастровый номер или адрес">
+                            <button type="submit" class="search__submit">Найти</button>
+                        </div>
+                        <p class="search__example">
+                            Например: 90:25:010121:8745 или Сочи, ул Абрикосовая, д 24, кв 21
+                        </p>
+                        <div class="search__info info">
+                            Для получения открытых данных введите адрес объекта или его кадастровый номер. Для получения через интернет срочной выписки из ЕГРН или ЕГРП с ЭЦП на квартиру, земельный участок - оплатите в соответствующем тарифе и Вам на E-mail поступит официальная выписка.
+    
+                        </div>
+                    </form>
+                </div>
             </div>
+
         </div>
         <div class="content-wr blue-bg">
-            <div class="search">
-                <h1 class="search__title main-title">Выписка ЕГРН онлайн</h1>
-                <p class="search__decr title-decr">заказать из базы Росреестра</p>
-                <div class="loading mx-auto">
-                    <div class="loading__box">
-                        <div class="loading__box-inner" style="width: 72%;"></div>
+            <div class="container">
+                <div class="search">
+                    <h1 class="search__title main-title">Выписка ЕГРН онлайн</h1>
+                    <p class="search__decr title-decr">заказать из базы Росреестра</p>
+                    <div class="loading mx-auto">
+                        <div class="loading__box">
+                            <div class="loading__box-inner" style="width: 72%;"></div>
+                        </div>
+                        <div class="loading__percent">72%</div>
+                        <div class="loading__text">Секунду...</div>
                     </div>
-                    <div class="loading__percent">72%</div>
-                    <div class="loading__text">Секунду...</div>
                 </div>
             </div>
         </div>
         <div class="content-wr blue-bg">
-            <div class="search">
-                <h1 class="search__title main-title">Выписка ЕГРН онлайн</h1>
-                <p class="search__decr title-decr">заказать из базы Росреестра</p>
-                <form action="#" class="search__form mx-auto">
-                    <div class="input-wr">
-                        <input type="search" class="search__input" placeholder="Кадастровый номер или адрес" value="90:25:010121:8745">
-                        <button type="submit" class="search__submit">Найти</button>
+            <div class="container">
+                <div class="search">
+                    <h1 class="search__title main-title">Выписка ЕГРН онлайн</h1>
+                    <p class="search__decr title-decr">заказать из базы Росреестра</p>
+                    <form action="#" class="search__form mx-auto">
+                        <div class="input-wr">
+                            <input type="search" class="search__input" placeholder="Кадастровый номер или адрес" value="90:25:010121:8745">
+                            <button type="submit" class="search__submit">Найти</button>
+                        </div>
+                    </form>
+                    
+                    <div class="search__results mx-auto">
+                        <a href="#">90:25:010121:8745 Республика Крым, г Ялта, ул Горького, д 36, кв 27</a>
+                        <a href="#">90:25:010121:8745 Республика Крым, г Ялта, ул Горького, д 36, кв 27</a>
                     </div>
-                </form>
-                
-                <div class="search__results mx-auto">
-                    <a href="#">90:25:010121:8745 Республика Крым, г Ялта, ул Горького, д 36, кв 27</a>
-                    <a href="#">90:25:010121:8745 Республика Крым, г Ялта, ул Горького, д 36, кв 27</a>
                 </div>
             </div>
         </div>
@@ -92,7 +103,7 @@
                 <div class="container">
                     <nav class="nav">
                         <a href="/" class="logo">
-                            <img src="icons/REESTR-PRAV.png" alt="Реестр прав">
+                            <img src="icons/reetr-prav.png" alt="Реестр прав">
                         </a>
                         <div class="nav__left">
                             <p class="ts">
@@ -155,7 +166,7 @@
                                                 <br>
                                                 Срок исполнения 15-30 мин (макс. 24 часа). 
                                                 <br>
-                                                <a href="#">смотреть описание</a> 
+                                                <a href="#" class="show-descr">смотреть описание</a> 
                                             </span>
                                             <span class="order__price">250 руб.</span>
                                         </label>
@@ -167,7 +178,7 @@
                                                 Выписка из ЕГРН (История о всех сделках и владельцах) о переходе прав собственности
                                                 <br> Срок исполнения 15-30 мин (макс. 24 часа). 
                                                 <br> 
-                                                <a href="#">смотреть описание</a> 
+                                                <a href="#" class="show-descr">смотреть описание</a> 
                                             </span>
                                             <span class="order__price">390 руб.</span>
                                         </label>
@@ -180,7 +191,7 @@
                                                 <br>
                                                 Срок исполнения 15-30 мин (макс. 24 часа). 
                                                 <br>
-                                                <a href="#">смотреть описание</a> 
+                                                <a href="#" class="show-descr">смотреть описание</a> 
                                             </span>
                                             <span class="order__price">290 руб.</span>
                                         </label>
@@ -193,7 +204,7 @@
                                                 <br>
                                                 Срок исполнения 15-30 мин (макс. 24 часа). 
                                                 <br>
-                                                <a href="#">смотреть описание</a> 
+                                                <a href="#" class="show-descr">смотреть описание</a> 
                                             </span>
                                             <span class="order__price">590 руб.</span>
                                         </label>
@@ -206,7 +217,7 @@
                                                 <br>
                                                 Срок исполнения 15-30 мин (макс. 24 часа). 
                                                 <br>
-                                                <a href="#">смотреть описание</a> 
+                                                <a href="#" class="show-descr">смотреть описание</a> 
                                             </span>
                                             <span class="order__price">440 руб.</span>
                                         </label>
@@ -247,66 +258,63 @@
             </section>
         </div>
         <div class="popup">
-            <div class="container">
-                <div class="popup__body">
-                    <div class="popup__left">
-                        <h3 class="popup__title">Выписка из ЕГРН об основных сведениях</h3>
-                        <hr class="hr_title">
-                        <p>
-                            Выписка из ЕГРН - это официальный документ, подтверждающий право владения недвижимостью, а так же показывает наличие обременений на имущество.
-                            Главная информация из выписки ЕГРН:                       
-                        </p>
-                        <ul class="need-list">
-                            <li>• Oсновные характеристики (адрес, площадь, тип, кадастр. стоимость...)
-                            </li>
-                            <li>• ФИО настоящего владельца (если права зарегистрированы)
-                            </li>
-                            <li>• Вид права на недвижимость, серию и номер св-ва на собственность
-                            </li>
-                            <li>• Наличие / отсутствие обременений
-                            </li>
-                            <li>• Информация о правопритязаниях (при наличии)
-                            </li>
-                        </ul>
-                        <p>
-                            <b>  Сроки получения: 30-60 минут (макс. 24 часа)</b>
-                        </p>
-                        <p>
-                            <b> Печать: электронная цифровая подпись</b> 
-                        </p>
-                        <hr class="hr_price">
-                        <div class="popup__price">Стоимость: 250 руб.</div>
-                        <div class="popup__footer">
-                            <button>Добавить к заказу</button>
-                            <a href="">Посмотреть образец</a>
-                        </div>
-                    </div>
-                    <div class="popup__right">
-                        <img src="icons/shield.svg" alt="" class="popup__icon">
-                        <p>Чем больше информации об объекте недвижимости, тем безопасней сделка.</p>
-                        <p><b>Почему мы?</b></p>
-                        <ul class="why-list">
-                            <li>90% выписок оформляется в течение двух часов
-                            </li>
-                            <li>Справки заверены ЭЦП и имеют полную юр. силу
-                            </li>
-                            <li>Возврат средств при отсутствии справки
-                            </li>
-                            <li>Присылаем PDF-файл на почту и в смс
-                            </li>
-                            <li>Скидки на второй и следующие заказы</li>
-                        </ul>
+            <div class="popup__body">
+                <div class="popup__left">
+                    <h3 class="popup__title">Выписка из ЕГРН об основных сведениях</h3>
+                    <hr class="hr_title">
+                    <p>
+                        Выписка из ЕГРН - это официальный документ, подтверждающий право владения недвижимостью, а так же показывает наличие обременений на имущество.
+                        Главная информация из выписки ЕГРН:                       
+                    </p>
+                    <ul class="need-list">
+                        <li>• Oсновные характеристики (адрес, площадь, тип, кадастр. стоимость...)
+                        </li>
+                        <li>• ФИО настоящего владельца (если права зарегистрированы)
+                        </li>
+                        <li>• Вид права на недвижимость, серию и номер св-ва на собственность
+                        </li>
+                        <li>• Наличие / отсутствие обременений
+                        </li>
+                        <li>• Информация о правопритязаниях (при наличии)
+                        </li>
+                    </ul>
+                    <p>
+                        <b>  Сроки получения: 30-60 минут (макс. 24 часа)</b>
+                    </p>
+                    <p>
+                        <b> Печать: электронная цифровая подпись</b> 
+                    </p>
+                    <hr class="hr_price">
+                    <div class="popup__price">Стоимость: 250 руб.</div>
+                    <div class="popup__footer">
+                        <button>Добавить к заказу</button>
+                        <a href="">Посмотреть образец</a>
                     </div>
                 </div>
+                <div class="popup__right">
+                    <img src="icons/shield.svg" alt="" class="popup__icon">
+                    <p>Чем больше информации об объекте недвижимости, тем безопасней сделка.</p>
+                    <p><b>Почему мы?</b></p>
+                    <ul class="why-list">
+                        <li>90% выписок оформляется в течение двух часов
+                        </li>
+                        <li>Справки заверены ЭЦП и имеют полную юр. силу
+                        </li>
+                        <li>Возврат средств при отсутствии справки
+                        </li>
+                        <li>Присылаем PDF-файл на почту и в смс
+                        </li>
+                        <li>Скидки на второй и следующие заказы</li>
+                    </ul>
+                </div>
             </div>
-
         </div>
         <div class="single payment-page">
             <header class="header header__blue">
                 <div class="container">
                     <nav class="nav">
                         <a href="/" class="logo">
-                            <img src="icons/REESTR-PRAV.png" alt="Реестр прав">
+                            <img src="icons/reetr-prav.png" alt="Реестр прав">
                         </a>
                         <div class="nav__left">
                             <p class="ts">
@@ -334,26 +342,24 @@
                                     Главная
                                 </a>
                             </li>
-                            <li class="two"><a href="/algoritm">Категории услуг</a></li>
+                            <li><a href="">Категории услуг</a></li>
                             <li><span>Оплата заказа</span></li>
                         </ul>
                     </div>
                     <h2 class="payment__title">Заказ выписок из ЕГРН</h2>
-                    <div class="payment__info">
-                        <form action="" class="payment__form">
-                            <p class="payment__object">
-                                <b>Объект недвижимости: 90:25:010121:8745
-                                </b>
-                            </p>
-                            <p>
-                                <b> Состав заказа</b>
-                                <br>
-                                Выписка из ЕГРН об основных характеристиках 640 руб.
-                            </p>
-                            <p><b>Оплатить заказ 640 руб.</b></p>
-                            <button class="payment__btn">Заплатить</button>
-                        </form>
-                    </div>
+                    <form action="" class="payment__form">
+                        <p class="payment__object">
+                            <b>Объект недвижимости: 90:25:010121:8745
+                            </b>
+                        </p>
+                        <p>
+                            <b> Состав заказа</b>
+                            <br>
+                            Выписка из ЕГРН об основных характеристиках 640 руб.
+                        </p>
+                        <p><b>Оплатить заказ 640 руб.</b></p>
+                        <button class="payment__btn">Заплатить</button>
+                    </form>
                 </div>
             </section>
         </div>
@@ -362,7 +368,7 @@
                 <div class="container">
                     <nav class="nav">
                         <a href="/" class="logo">
-                            <img src="icons/REESTR-PRAV.png" alt="Реестр прав">
+                            <img src="icons/reetr-prav.png" alt="Реестр прав">
                         </a>
                         <div class="nav__left">
                             <p class="ts">
@@ -390,23 +396,25 @@
                                     Главная
                                 </a>
                             </li>
-                            <li class="two"><a href="/algoritm">Категории услуг</a></li>
+                            <li><a href="">Категории услуг</a></li>
                             <li><span>Оплата заказа</span></li>
                         </ul>
                     </div>
 
-                    <h2>Заказ 822. Собственники обхъекта недвижимости</h2>
+                    <h2 class="payment__title">Заказ 822. Собственники обхъекта недвижимости</h2>
                
                     <form action="" class="owners__form">
-                        <input type="text" placeholder="Фамилия">
-                        <input type="text" placeholder="Имя">
-                        <input type="text" placeholder="Отчество">
+                        <input type="text" placeholder="Фамилия" class="input_small">
+                        <input type="text" placeholder="Имя" class="input_small">
+                        <input type="text" placeholder="Отчество" class="input_small">
                         <input type="text" placeholder="Дата рождения">
                         <input type="text" placeholder="Серия и номер паспорта">
                         <input type="text" placeholder="Дата выдачи паспорта">
                         <input type="text" placeholder="Регион проживания">
-                        <button class="btn btn_small">Сохранить</button>
-                        <button class="btn btn_small btn_red">Удалить</button>
+                        <div class="form__btns">
+                            <button class="btn btn_small">Сохранить</button>
+                            <button class="btn btn_small btn_red">Удалить</button>
+                        </div>
                     </form>
                     <hr class="hr__forms">
                     
@@ -427,5 +435,6 @@
         </div>
     </main>
 
+    <script src="script/app.js"></script>
 </body>
 </html>

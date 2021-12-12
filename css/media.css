@@ -1,0 +1,162 @@
+/* input */
+input,
+.search__input {
+    font-size: 12px;
+    line-height: 15px;
+}
+button,
+.btn {
+    font-size: 15px;
+}
+/* header */
+.logo {
+    width: 190px;
+    margin: 0 15px
+}
+
+.ts {
+    display: none;
+}
+.burger {
+    display: block;
+    flex-shrink: 0;
+}
+.pc{
+    border-radius: 7px;
+    flex-shrink: 0;
+    padding: 7px 9px;
+}
+.pc span {
+    display: none;
+}
+.pc svg {
+    margin-right: 0;
+}
+
+/* first page */
+.main-title {
+    font-size: 27px;
+    line-height: 33px;
+}
+.title-decr {
+    font-size: 16px;
+line-height: 20px;
+}
+.input-wr {
+    height: 37px;
+}
+.search__input {
+    font-size: 14px;
+}
+.loading__text {
+    font-size: 15px;
+    line-height: 18px;
+}
+.search__results  {
+    font-size: 14px;
+line-height: 17px;
+margin-top: 25px;
+}
+/* single */
+.single {
+    padding-top: 110px;
+}
+.single__title {
+    margin-bottom: 25px;
+}
+.object__info {
+    display: block;
+    margin-bottom: 0;
+}
+
+.object__info_left {
+    margin-right: 0;
+    max-width: 100%;
+}
+.object__info-list li {
+    margin-bottom: 10px;
+}
+/* order */
+.order__title {
+    font-size: 17px;
+line-height: 21px;
+}
+.order__price {
+    font-size: 20px;
+line-height: 24px;
+}
+.order__input {
+    min-width: 100%;
+}
+.label {
+    font-size: 13px;
+    line-height: 15px;
+}
+.label_bordered {
+    padding-right: 15px;
+}
+
+/* popup */
+.popup .container {
+    height: 100%;
+}
+.popup__body {
+    overflow-y: auto;
+    display: block;
+    padding: 25px 15px;
+    border-radius: 25px;
+    max-height: 90%;
+}
+.popup__left,
+.popup__right {
+    width: unset;
+    max-width: unset;
+    margin: 0;
+}
+.popup__right {
+    display: none;
+}
+
+.popup__footer {
+    display: block;
+}
+.popup__footer button {
+margin-bottom: 20px;
+}
+
+/* breadcrumbs */
+.breadcrumbs__list {
+    font-size: 12px;
+line-height: 15px;
+white-space: nowrap;
+}
+.breadcrumbs__list a, 
+.breadcrumbs__list span {
+    padding: 10px;
+}
+
+.breadcrumbs::after {
+    right: -25px;
+    top: 4px;
+    border: 14px solid transparent;
+    border-left: 12px solid #51ADFF;
+}
+.breadcrumbs__list li::after {
+    right: -5px;
+    width: 13px;
+}
+
+/* payment */
+.payment__title {
+    font-size: 25px;
+line-height: 30px;  
+margin-bottom: 20px;
+}
+.payment__form {
+    font-size: 20px;
+    line-height: 24px;
+    
+}
+.payment__form b {
+    font-weight: 600;
+}
