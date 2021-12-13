@@ -28,7 +28,7 @@ lastScrollTop = 60;
 document.addEventListener("DOMContentLoaded", fixHeader);
 window.addEventListener("scroll", fixHeader);
 function fixHeader() {
-	var st = window.pageYOffset || document.documentElement.scrollTop,
+	let st = window.pageYOffset || document.documentElement.scrollTop,
 	header = document.querySelector('.header'),
 	className = 'header__blue';
 	if (st > lastScrollTop){
@@ -38,3 +38,11 @@ function fixHeader() {
 
 	}
 }
+
+// order steps
+let nextStep = document.querySelector('.order__next-step');
+nextStep?.addEventListener('click', (event) => {
+	event.preventDefault();
+	document.querySelector('.order__step_first').style.display = 'none';
+	document.querySelector('.order__step_second').classList.add('order_shown')
+})

@@ -692,7 +692,18 @@ margin: 5px 0;
     display: block;
     margin: 15px 0
 }
-
+.order__step_second {
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition);
+    height: 0;
+}
+.order_shown {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
 /* popup */
 .popup {
     top: 0;
