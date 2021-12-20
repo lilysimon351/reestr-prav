@@ -58,9 +58,25 @@ document.querySelectorAll('.open-popup')?.forEach( (item, i) => {
 popup?.addEventListener('click', (event) => {
 	if(event.target.classList.contains('popup') || event.target.classList.contains('popup-overlay')) {
 		popup.classList.remove(className);
-		document.querySelector(`.${shownPopupClassName}`).classList.remove(shownPopupClassName)
+		document.querySelectorAll(`.${shownPopupClassName}`)?.forEach( item => item.classList.remove(shownPopupClassName))
 	}
 })
+
+// open pdf
+document.querySelectorAll('.pdf-opener')?.forEach( (item, i) => { 
+	item.addEventListener('click', (event) => {
+		event.preventDefault();
+		let popupName = item.getAttribute('data-popup'),
+			pdfLink = item.getAttribute('data-pdf-link'),
+			pdfPrice = item.getAttribute('data-pdf-price');
+		document.querySelectorAll(`.${shownPopupClassName}`)?.forEach( item => item.classList.remove(shownPopupClassName))
+		document.querySelector(`.popup--${popupName}`).classList.add(shownPopupClassName)
+		document.querySelector('.popup__object').data = pdfLink
+		document.querySelector('.popup__object-link').href = pdfLink
+		document.querySelector('.popup__object-link').innerHTML = pdfLink
+		document.querySelector('.popup__order-pdf__price').innerHTML = pdfPrice
+	})
+});
 
 
 // fix header
