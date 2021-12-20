@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сведения из Выписки ЕГРН онлайн</title>
-    <meta name="description" content="Онлайн сервис предоставления сведений из ЕГРН и проверки недвижимости на риски. Не является официальным сайтом, а лишь упрощает взаимодействие с Росреестром">
+    <meta name="description"
+        content="Онлайн сервис предоставления сведений из ЕГРН и проверки недвижимости на риски. Не является официальным сайтом, а лишь упрощает взаимодействие с Росреестром">
     <meta name="keywords" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,362 +15,106 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/media.css">
 </head>
-<body>
+
+<body class="home-page">
     <!-- HEADER -->
-    <header class="header">
+    <header class="header header__blue">
         <div class="container">
             <nav class="nav">
                 <div class="btn btn_white burger"> <span></span> </div>
                 <a href="/" class="logo">
-                    <img src="icons/reestr-prav.png" alt="Реестр прав">
+                    kadastr-rosreestr
                 </a>
                 <div class="nav__left">
                     <p class="ts">
-                        Тех поддержка: <a href="mailto:rosereestr@yandex.ru">rosereestr@yandex.ru</a>
+                        Тех поддержка: <a href="mailto:info@check-home.online">info@check-home.online</a>
                     </p>
-                    <a href="#" class="btn btn_white pc">
+                    <a href="#" class="btn btn_white pc open-popup" data-popup="cabinet">
                         <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.2175 12.2825C15.1828 11.2478 13.9512 10.4818 12.6075 10.0181C14.0467 9.02689 14.9922 7.36799 14.9922 5.49219C14.9922 2.4638 12.5284 0 9.5 0C6.47162 0 4.00781 2.4638 4.00781 5.49219C4.00781 7.36799 4.95332 9.02689 6.39253 10.0181C5.0488 10.4818 3.81722 11.2478 2.7825 12.2825C0.988186 14.0768 0 16.4625 0 19H1.48438C1.48438 14.5802 5.08016 10.9844 9.5 10.9844C13.9198 10.9844 17.5156 14.5802 17.5156 19H19C19 16.4625 18.0118 14.0768 16.2175 12.2825ZM9.5 9.5C7.2901 9.5 5.49219 7.70213 5.49219 5.49219C5.49219 3.28225 7.2901 1.48438 9.5 1.48438C11.7099 1.48438 13.5078 3.28225 13.5078 5.49219C13.5078 7.70213 11.7099 9.5 9.5 9.5Z" fill="#003C82"/>
+                            <path
+                                d="M16.2175 12.2825C15.1828 11.2478 13.9512 10.4818 12.6075 10.0181C14.0467 9.02689 14.9922 7.36799 14.9922 5.49219C14.9922 2.4638 12.5284 0 9.5 0C6.47162 0 4.00781 2.4638 4.00781 5.49219C4.00781 7.36799 4.95332 9.02689 6.39253 10.0181C5.0488 10.4818 3.81722 11.2478 2.7825 12.2825C0.988186 14.0768 0 16.4625 0 19H1.48438C1.48438 14.5802 5.08016 10.9844 9.5 10.9844C13.9198 10.9844 17.5156 14.5802 17.5156 19H19C19 16.4625 18.0118 14.0768 16.2175 12.2825ZM9.5 9.5C7.2901 9.5 5.49219 7.70213 5.49219 5.49219C5.49219 3.28225 7.2901 1.48438 9.5 1.48438C11.7099 1.48438 13.5078 3.28225 13.5078 5.49219C13.5078 7.70213 11.7099 9.5 9.5 9.5Z"
+                                fill="#003C82" />
                         </svg>
                         <span>
                             Личный кабинет
                         </span>
                     </a>
                 </div>
+                <div class="nav__menu-wr">
+                    <button class="nav__close"><span>&#43;</span></button>
+                    <ul class="nav__menu">
+                        <li><a href="/">На главную</a>
+                        </li>
+                        <li><a href="#contact_form_pop" class="fancybox-inline">Задать вопрос</a>
+                        </li>
+                        <li><a href="/faq">Частые вопросы</a>
+                        </li>
+                        <li><a href="/algoritm">О сервисе</a>
+                        </li>
+                        <li><a href="/offer">Правовая информация</a>
+                        </li>
+                        <li><a href="/personal">Личный кабинет</a></li>
+                        <li><a href="mailto:info@check-home.online" class="teh__mail">Тех. поддержка:
+                                <u>info@check-home.online</u></a></li>
+                        <li><a href="/offer"><u>Публичная оферта</u></a></li>
+                        <li><a href="/policy"><u>Обработка персональных данных</u></a></li>
+                    </ul>
+                </div>
+                
             </nav>
         </div>
     </header>
     <main>
-        <!-- SEARCH -->
         <div class="content-wr blue-bg">
             <div class="container">
+                <!-- SEARCH -->
                 <div class="search">
-                    <h1 class="search__title main-title">Выписка ЕГРН онлайн</h1>
+                    <h1 class="search__title main-title">Сведения ЕГРН онлайн</h1>
                     <p class="search__decr title-decr">заказать из базы Росреестра</p>
-                    <form action="#" class="search__form mx-auto">
-                        <div class="input-wr">
-                            <input type="search" class="search__input" placeholder="Кадастровый номер или адрес">
-                            <button type="submit" class="search__submit">Найти</button>
-                        </div>
-                        <p class="search__example">
-                            Например: 90:25:010121:8745 или Сочи, ул Абрикосовая, д 24, кв 21
-                        </p>
-                        <div class="search__info info">
-                            Для получения открытых данных введите адрес объекта или его кадастровый номер. Для получения через интернет срочной выписки из ЕГРН или ЕГРП с ЭЦП на квартиру, земельный участок - оплатите в соответствующем тарифе и Вам на E-mail поступит официальная выписка.
-    
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- LOADING -->
-        <div class="content-wr blue-bg">
-            <div class="container">
-                <div class="search">
-                    <h1 class="search__title main-title">Выписка ЕГРН онлайн</h1>
-                    <p class="search__decr title-decr">заказать из базы Росреестра</p>
-                    <div class="loading mx-auto">
-                        <div class="loading__box">
-                            <div class="loading__box-inner" style="width: 72%;"></div>
-                        </div>
-                        <div class="loading__percent">72%</div>
-                        <div class="loading__text">Секунду...</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- RESULTS -->
-        <div class="content-wr blue-bg">
-            <div class="container">
-                <div class="search">
-                    <h1 class="search__title main-title">Выписка ЕГРН онлайн</h1>
-                    <p class="search__decr title-decr">заказать из базы Росреестра</p>
-                    <form action="#" class="search__form mx-auto">
-                        <div class="input-wr">
-                            <input type="search" class="search__input" placeholder="Кадастровый номер или адрес" value="90:25:010121:8745">
-                            <button type="submit" class="search__submit">Найти</button>
-                        </div>
-                    </form>
-                    
-                    <div class="search__results mx-auto">
-                        <a href="#">90:25:010121:8745 Республика Крым, г Ялта, ул Горького, д 36, кв 27</a>
-                        <a href="#">90:25:010121:8745 Республика Крым, г Ялта, ул Горького, д 36, кв 27</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- OBJECT INFO -->
-        <div class="single">
-            <section class="object">
-                <div class="container">
-                    <h3 class="single__title">Выписка по объекту недвижимости 90:25:010121:8745</h3>
-                    <div class="object__info">
-                        <ul class="object__info-list object__info_left">
-                            <li>Кадастровый номер: <b> 90:25:010121:8745 </b></li>
-                            <li> Тип объекта: <b> Объект капитального строительства </b></li>
-                            <li>Адрес объекта: <b> Республика Крым, г Ялта, ул Горького, д 36, кв 27 </b></li>
-                            <li> Статус объекта: <b> Ранее учтенный </b></li>
-                            <li>Дата постановки на кадастровый учет: <b> 14.03.2018 </b></li>
-                            <li>Площадь ОКС: <b> 65,9 </b></li>
-                            <li>Единица измерения: <b>  Квадратный метр </b></li>
-                        </ul>
-                        <ul class="object__info-list object__info_right">
-                            <li>Кадастровая стоимость: <b> 5359244,47 руб.
-                            </b></li>
-                            <li> Дата внесения стоимости: <b> 15.01.2020
-                            </b></li>
-                            <li>Дата определения стоимости:<b> 01.01.2019
-                            </b></li>
-                            <li> (ОКС) Тип: <b> Квартира, Жилое помещение </b></li>
-                            <li>Дата обновления информации: <b>  16.01.2020
-                            </b></li>
-                            <li>Этаж: <b> 6
-                            </b></li>
-                            <li>Форма собственности: <b> </b></li>
-                        </ul>
-                    </div>
-                    <div class="order">
-                        <form action="#" class="order__form">
-                            <div class="order__step order__step_first">
-                                <div class="order__header">
-                                    <div class="order__title">Выберите необходимые выписки для заказа: </div>
-                                    <div class="order__step-text">Шаг 1/2</div>
-                                </div>
-                                <div class="order__body">
-                                    <div class="checkbox-wr">
-                                        <input type="checkbox" name="" id="check_1" class="hidden-checkbox" checked="true">
-                                        <label for="check_1" class="label label_bordered">
-                                            <span class="label__text">
-                                                 Выписка из ЕГРН об основных характеристиках 
-                                                <br>
-                                                Срок исполнения 15-30 мин (макс. 24 часа). 
-                                                <br>
-                                                <a href="#" class="show-descr">смотреть описание</a> 
-                                            </span>
-                                            <span class="order__price">250 руб.</span>
-                                        </label>
-                                    </div>
-                                    <div class="checkbox-wr">
-                                        <input type="checkbox" name="" id="check_2" class="hidden-checkbox" checked="true">
-                                        <label for="check_2" class="label label_bordered">
-                                            <span class="label__text">
-                                                Выписка из ЕГРН (История о всех сделках и владельцах) о переходе прав собственности
-                                                <br> Срок исполнения 15-30 мин (макс. 24 часа). 
-                                                <br> 
-                                                <a href="#" class="show-descr">смотреть описание</a> 
-                                            </span>
-                                            <span class="order__price">390 руб.</span>
-                                        </label>
-                                    </div>
-                                    <div class="checkbox-wr checkbox-wr_fire">
-                                        <input type="checkbox" name="" id="check_3" class="hidden-checkbox" checked="true">
-                                        <label for="check_3" class="label label_bordered">
-                                            <span class="label__text">
-                                                Срочная выписка №1
-                                                <br>
-                                                Срок исполнения 15-30 мин (макс. 24 часа). 
-                                                <br>
-                                                <a href="#" class="show-descr">смотреть описание</a> 
-                                            </span>
-                                            <span class="order__price">290 руб.</span>
-                                        </label>
-                                    </div>
-                                    <div class="checkbox-wr checkbox-wr_fire">
-                                        <input type="checkbox" name="" id="check_4" class="hidden-checkbox" checked="true">
-                                        <label for="check_4" class="label label_bordered">
-                                            <span class="label__text">
-                                                Срочная выписка №2
-                                                <br>
-                                                Срок исполнения 15-30 мин (макс. 24 часа). 
-                                                <br>
-                                                <a href="#" class="show-descr">смотреть описание</a> 
-                                            </span>
-                                            <span class="order__price">590 руб.</span>
-                                        </label>
-                                    </div>
-                                    <div class="checkbox-wr checkbox-wr_warning">
-                                        <input type="checkbox" name="" id="check_5" class="hidden-checkbox" checked="true">
-                                        <label for="check_5" class="label label_bordered">
-                                            <span class="label__text">
-                                                Отчёт о рисках
-                                                <br>
-                                                Срок исполнения 15-30 мин (макс. 24 часа). 
-                                                <br>
-                                                <a href="#" class="show-descr">смотреть описание</a> 
-                                            </span>
-                                            <span class="order__price">440 руб.</span>
-                                        </label>
-                                    </div>
-                                   
-                                </div>
-                                <div class="order__result">
-                                    <div class="order__result-text">Итого сумма: <b> 1960 руб.</b> </div>
-                                    <button class="order__result-btn btn order__next-step">Перейти к оформлению заказа</button>
-                                </div>
-                            </div>
-                            <div class="order__step order__step_second">
-                                <div class="order__header">
-                                    <div class="order__title">Введите данные для получения заказа: </div>
-                                    <div class="order__step-text">Шаг 2/2</div>
-                                </div>
-                                <div class="order__body">
-                                    <input type="email" name="" id="" placeholder="Введите E-mail" class="order__input">
-                                    <span class="input__decr">Укажите E-mail адрес, куда поступят выписки</span>
-                                    <div class="policy-wr">
-                                        <input type="checkbox" name="" id="check_6" class="hidden-checkbox" checked="true">
-                                        <label for="check_6" class="label">
-                                            <span class="label__text">
-                                                Даю согласие на обработку моих данных по Политике обработки персональных данных и Договору оферте.
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="order__result">
-                                    <div class="order__result-text">Итого сумма: <b> 640 руб.</b> </div>
-                                    <button class="order__result-btn btn">Оплатить выписку</button>
-                                </div>
+                    <div class="box mx-auto">
+                        <!-- FORM -->
+                        <form action="#" class="search__form">
+                            <div class="input-wr">
+                                <input type="search" class="search__input" placeholder="Кадастровый номер или адрес">
+                                <button type="submit" class="search__submit">Найти</button>
                             </div>
                         </form>
+
+                        <!-- SEARCH ADDITIONAL INFO -->
+                        <div class="search__add-info">
+                            <p class="search__example">
+                                Например: 90:25:010121:8745 или Сочи, ул Абрикосовая, д 24, кв 21
+                            </p>
+                            <div class="search__info info">
+                                Для получения открытых данных введите адрес объекта или его кадастровый номер. Для
+                                получения
+                                через интернет срочных сведений из ЕГРН или ЕГРП с ЭЦП на квартиру, земельный участок -
+                                оплатите в соответствующем тарифе и Вам на E-mail поступит официальная выписка.
+                            </div>
+                        </div>
+
+                        <!-- LOADING -->
+                        <div class="loading">
+                            <div class="loading__box">
+                                <div class="loading__box-inner" style="width: 0%;"></div>
+                            </div>
+                            <div class="loading__percent"><span>0</span>%</div>
+                            <div class="loading__text">Секунду...</div>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </div>
-        <!-- POPUP -->
-        <div class="popup">
-            <div class="popup__body">
-                <div class="popup__left">
-                    <h3 class="popup__title">Выписка из ЕГРН об основных сведениях</h3>
-                    <hr class="hr_title">
-                    <p>
-                        Выписка из ЕГРН - это официальный документ, подтверждающий право владения недвижимостью, а так же показывает наличие обременений на имущество.
-                        Главная информация из выписки ЕГРН:                       
-                    </p>
-                    <ul class="need-list">
-                        <li>• Oсновные характеристики (адрес, площадь, тип, кадастр. стоимость...)
-                        </li>
-                        <li>• ФИО настоящего владельца (если права зарегистрированы)
-                        </li>
-                        <li>• Вид права на недвижимость, серию и номер св-ва на собственность
-                        </li>
-                        <li>• Наличие / отсутствие обременений
-                        </li>
-                        <li>• Информация о правопритязаниях (при наличии)
-                        </li>
-                    </ul>
-                    <p>
-                        <b>  Сроки получения: 30-60 минут (макс. 24 часа)</b>
-                    </p>
-                    <p>
-                        <b> Печать: электронная цифровая подпись</b> 
-                    </p>
-                    <hr class="hr_price">
-                    <div class="popup__price">Стоимость: 250 руб.</div>
-                    <div class="popup__footer">
-                        <button>Добавить к заказу</button>
-                        <a href="" class="btn btn_green">Посмотреть образец</a>
+
+                    <!-- RESULTS -->
+                    <div class="search__results mx-auto">
+                        <a href="single.html">90:25:010121:8745 Республика Крым, г Ялта, ул Горького, д 36, кв 27</a>
+                        <a href="single.html">90:25:010121:8745 Республика Крым, г Ялта, ул Горького, д 36, кв 27</a>
                     </div>
-                </div>
-                <div class="popup__right">
-                    <img src="icons/shield.svg" alt="" class="popup__icon">
-                    <p>Чем больше информации об объекте недвижимости, тем безопасней сделка.</p>
-                    <p><b>Почему мы?</b></p>
-                    <ul class="why-list">
-                        <li>90% выписок оформляется в течение двух часов
-                        </li>
-                        <li>Справки заверены ЭЦП и имеют полную юр. силу
-                        </li>
-                        <li>Возврат средств при отсутствии справки
-                        </li>
-                        <li>Присылаем PDF-файл на почту и в смс
-                        </li>
-                        <li>Скидки на второй и следующие заказы</li>
-                    </ul>
                 </div>
             </div>
         </div>
-        <!-- PAYMENT -->
-        <div class="single">
-            <section class="payment">
-                <div class="container">
-                    <div class="breadcrumbs">
-                        <ul class="breadcrumbs__list">
-                            <li>
-                                <a href="/">
-                                    Главная
-                                </a>
-                            </li>
-                            <li><a href="">Категории услуг</a></li>
-                            <li><span>Оплата заказа</span></li>
-                        </ul>
-                    </div>
-                    <h2 class="payment__title">Заказ выписок из ЕГРН</h2>
-                    <form action="" class="payment__form">
-                        <p class="payment__object">
-                            <b>Объект недвижимости: 90:25:010121:8745
-                            </b>
-                        </p>
-                        <p>
-                            <b> Состав заказа</b>
-                            <br>
-                            Выписка из ЕГРН об основных характеристиках 640 руб.
-                        </p>
-                        <p><b>Оплатить заказ 640 руб.</b></p>
-                        <button class="payment__btn">Заплатить</button>
-                    </form>
-                </div>
-            </section>
-        </div>
-        <!-- OWNERS -->
-        <div class="single">
-            <section class="owners">
-                <div class="container">
-                    <!-- BREADCRUMBS -->
-                    <div class="breadcrumbs">
-                        <ul class="breadcrumbs__list">
-                            <li>
-                                <a href="/">
-                                    Главная
-                                </a>
-                            </li>
-                            <li><a href="">Категории услуг</a></li>
-                            <li><span>Оплата заказа</span></li>
-                        </ul>
-                    </div>
 
-                    <h2 class="payment__title">Заказ 822. Собственники обхъекта недвижимости</h2>
-               
-                    <form action="" class="owners__form">
-                        <input type="text" placeholder="Фамилия" class="input_small">
-                        <input type="text" placeholder="Имя" class="input_small">
-                        <input type="text" placeholder="Отчество" class="input_small">
-                        <input type="text" placeholder="Дата рождения">
-                        <input type="text" placeholder="Серия и номер паспорта">
-                        <input type="text" placeholder="Дата выдачи паспорта">
-                        <input type="text" placeholder="Регион проживания">
-                        <div class="form__btns">
-                            <button class="btn btn_small">Сохранить</button>
-                            <button class="btn btn_small btn_red">Удалить</button>
-                        </div>
-                    </form>
-                    <hr class="hr__forms">
-                    
-                    <form action="" class="owners__form">
-                        <input type="text" placeholder="Фамилия" class="input_small">
-                        <input type="text" placeholder="Имя" class="input_small">
-                        <input type="text" placeholder="Отчество" class="input_small">
-                        <input type="text" placeholder="Дата рождения">
-                        <input type="text" placeholder="Серия и номер паспорта">
-                        <input type="text" placeholder="Дата выдачи паспорта">
-                        <input type="text" placeholder="Регион проживания">
-                        <button class="btn btn_small">Сохранить</button>
-                        <button class="btn btn_small btn_red">Удалить</button>
-                    </form>
-                    <hr class="hr__forms">
-                </div>
-            </section>
-        </div>
     </main>
 
     <script src="script/app.js"></script>
 </body>
+
 </html>

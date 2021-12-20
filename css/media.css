@@ -11,33 +11,38 @@ input,
     font-size: 12px;
     line-height: 15px;
 }
+
 button,
 .btn {
     font-size: 15px;
 }
+
 /* header */
 .logo {
-    width: 190px;
     margin: 0 15px
 }
 
 .ts {
     display: none;
 }
+
 .burger {
     display: block;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
 }
-.pc{
+
+.pc {
     border-radius: 7px;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     padding: 7px 9px;
 }
+
 .pc span {
     display: none;
 }
+
 .pc svg {
     margin-right: 0;
 }
@@ -47,32 +52,40 @@ button,
     font-size: 27px;
     line-height: 33px;
 }
+
 .title-decr {
     font-size: 16px;
-line-height: 20px;
+    line-height: 20px;
 }
+
 .input-wr {
     height: 37px;
 }
+
 .search__input {
     font-size: 14px;
 }
+
 .loading__text {
     font-size: 15px;
     line-height: 18px;
 }
-.search__results  {
+
+.search__results {
     font-size: 14px;
-line-height: 17px;
-margin-top: 25px;
+    line-height: 17px;
+    margin-top: 25px;
 }
+
 /* single */
 .single {
     padding-top: 110px;
 }
+
 .single__title {
     margin-bottom: 25px;
 }
+
 .object__info {
     display: block;
     margin-bottom: 0;
@@ -82,56 +95,66 @@ margin-top: 25px;
     margin-right: 0;
     max-width: 100%;
 }
+
 .object__info-list li {
     margin-bottom: 10px;
 }
+
 /* order */
 .order__title {
     font-size: 17px;
-line-height: 21px;
+    line-height: 21px;
 }
+
 .order__price {
     font-size: 20px;
-line-height: 24px;
+    line-height: 24px;
 }
+
 .order__input {
     min-width: 100%;
 }
+
 .label {
     font-size: 13px;
     line-height: 15px;
 }
+
 .label_bordered {
     padding-right: 15px;
 }
 
 /* popup */
-.popup .container {
-    height: 100%;
-}
 .popup__body {
-    overflow-y: auto;
     display: block;
     padding: 25px 15px;
     border-radius: 25px;
     max-height: 90%;
-    font-size: 11px;
+    font-size: 12px;
 }
+
 .popup__left,
 .popup__right {
     width: unset;
     max-width: unset;
     margin: 0;
 }
+
 .popup__right {
     display: none;
 }
 
 .popup__footer {
-    display: block;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 25px;
 }
+
 .popup__footer button {
-margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+.popup__price {
+    text-align: center;
 }
 .need-list {
     margin-top: 20px;
@@ -140,10 +163,11 @@ margin-bottom: 20px;
 /* breadcrumbs */
 .breadcrumbs__list {
     font-size: 12px;
-line-height: 15px;
-white-space: nowrap;
+    line-height: 15px;
+    white-space: nowrap;
 }
-.breadcrumbs__list a, 
+
+.breadcrumbs__list a,
 .breadcrumbs__list span {
     padding: 10px;
 }
@@ -154,6 +178,7 @@ white-space: nowrap;
     border: 14px solid transparent;
     border-left: 12px solid #51ADFF;
 }
+
 .breadcrumbs__list li::after {
     right: -5px;
     width: 13px;
@@ -162,14 +187,16 @@ white-space: nowrap;
 /* payment */
 .payment__title {
     font-size: 25px;
-line-height: 30px;  
-margin-bottom: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
+
 .payment__form {
     font-size: 20px;
     line-height: 24px;
-    
+
 }
+
 .payment__form b {
     font-weight: 600;
 }
