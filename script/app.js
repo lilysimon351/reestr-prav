@@ -9,7 +9,7 @@ document.querySelector('.search__form')?.addEventListener('submit', (event) => {
 			loadingPercent = loading.querySelector('.loading__percent span');
 	
 		loading.style.display = 'block';
-		animateValue(loadingBox, 100, 0, 11000);
+		animateValue(loadingBox, 100, 0, 5000);
 	
 		// animate width and percentage
 		function animateValue(obj, start, end, duration) {

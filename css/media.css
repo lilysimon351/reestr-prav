@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 /* input */
 input,
 .search__input {
@@ -145,7 +146,12 @@ button,
 }
 
 .popup__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-bottom: 25px;
 }
@@ -153,9 +159,11 @@ button,
 .popup__footer button {
     margin-bottom: 20px;
 }
+
 .popup__price {
     text-align: center;
 }
+
 .need-list {
     margin-top: 20px;
 }
